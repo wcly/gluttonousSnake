@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.start-page {
+    width: 100%;
+    z-index: 999;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.start-btn {
+    height: 50px;
+    width: 100px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    color: #fff;
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.wrapper {
+    width: 100%;
+    height: 1000px;
+    display: none;
+}
+
+.left-side {
+    width: 24%;
+    position: absolute;
+    height: 1000px;
+}
+
+.left-side img {
+    display: none;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.main {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 90%;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+.score {
+    line-height: 80px;
+    color: #333;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.content {
+    position: absolute;
+    width: 680px;
+    height: 460px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    background-color: skyblue;
+}
+
+.loser {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    font-weight: bolder;
+    z-index: 1000;
+}
+
+.con {
+    background-color: green;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.food {
+    background-image: url('./imgs/food.png');
+    background-size: 100% 100%;
+}
+
+.head {
+    background-image: url('./imgs/snakeHead.png');
+    background-size: 100% 100%;
+    transform: rotate(-90deg);
+}
+
+.body {
+    background-image: url('./imgs/snakeBody.png');
+    background-size: 100% 100%;
+    transform: rotate(-90deg);
+}
